@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "food";
+}
+
+<h1>food Menu</h1>
+@using (Html.BeginForm())
+{
+<table class="table">
+    <tr>
+        <td>Enter  Name</td>
+        <td>
+            @Html.TextBox("name")
+        </td>
+    </tr>
+    <tr>
+        <td> Mobil No</td>
+        <td>
+            @Html.TextBox("mobileno")
+        </td>
+    </tr>
+    <tr>
+        <td>Select South Indian</td>
+        <td>
+            <input type="checkbox" name="soptions" value="Idli" /> Idli
+            <input type="checkbox" name="soptions" value="Dosa" /> Dosa
+            <input type="checkbox" name="soptions" value="Uuttapa" /> Uuttapa
+        </td>
+    </tr>
+    <tr>
+        <td>Select North Indian</td>
+        <td>
+            <input type="checkbox" name="noptions" value="Chole" /> Chole
+            <input type="checkbox" name="noptions" value="DalBhati" /> DalBhati
+            <input type="checkbox" name="noptions" value="Chaat" /> Chaat
+        </td>
+    </tr>
+    <tr>
+        
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </td>
+    </tr>
+</table>
+}
+

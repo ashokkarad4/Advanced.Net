@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h1>Order</h1>
+
+<table class="table">
+    <tr>
+        <td>Your Name</td>
+        <td>
+            @ViewBag.Name
+        </td>
+    </tr>
+    <tr>
+        <td>Mobile No</td>
+        <td>
+            @ViewBag.Mobile
+        </td>
+    </tr>
+    <tr>
+        <td>
+            South Indian
+        </td>
+        <td>
+            @foreach (string s in ViewBag.SOption)
+            {
+                <p>
+                    @s
+                </p>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>
+            North Indian
+        </td>
+        <td>
+            @foreach (string n in ViewBag.NOption)
+            {
+                <p>
+                    @n
+                </p>
+            }
+        </td>
+    </tr>
+</table>
